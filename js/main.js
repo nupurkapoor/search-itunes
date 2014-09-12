@@ -1,6 +1,6 @@
 var app = angular.module('nkApp', ["ui.utils", "ui.router"]);
 
-app.factory('iTunesData', function($http) {
+app.factory('iTunesListing', function($http) {
    return {
         doSearch: function(sQuery) {
              //return the promise directly.
@@ -14,9 +14,9 @@ app.factory('iTunesData', function($http) {
    }
 });
 
-app.controller('iTunesSearch', function($scope, $location, $routeParams, iTunesData) {
+app.controller('iTunesSearch', function($scope, $location, $routeParams, iTunesListing) {
     $scope.search = function() {
-      iTunesData.doSearch($scope.searchTerm)
+      iTunesListing.doSearch($scope.searchTerm)
         .then(function(result) {
               $scope.data = result.data;
               $location.path($scope.searchTerm);
