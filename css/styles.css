@@ -1,0 +1,85 @@
+body {
+  color: #222;
+  padding-top: 80px;
+  background: #DADEDE;
+}
+
+.container {
+  width: 1050px;
+}
+
+#searchBox {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  width: 500px;
+}
+
+.navbar-form {
+  padding-left: 0 !important;
+}
+
+.img-round {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 1px solid #DEDEDE;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.05);
+}
+
+.search-result {
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-default {
+  color: #ffffff;
+  background-color: #5F5293;
+  border-color: #5F5293;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #ffffff;
+  background-color: #5D6D87;
+  border-color: #5D6D87;
+}
