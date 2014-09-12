@@ -26,4 +26,7 @@ app.controller('iTunesSearch', function($scope, $location, $routeParams, iTunesL
     if($scope.searchTerm!="") {
       $scope.search();
     }
+    $scope.clear = function () {
+        $scope.searchTerm = "";
+    };
 });
