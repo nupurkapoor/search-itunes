@@ -2,12 +2,12 @@ var app = angular.module('nkApp', ["ui.utils", "ui.router"]);
 
 app.factory('iTunesListing', function($http) {
    return {
-        doSearch: function(sQuery) {
+        doSearch: function(queryString) {
              //return the promise directly.
              return $http.jsonp('http://itunes.apple.com/search', {
                     params: {
                         "callback": "JSON_CALLBACK",
-                        "term": sQuery
+                        "term": queryString
                     }
                 });
         }
