@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="nkApp">
+<head>
+  <title>Searching the iTunes API asynchroniously with Angular JS</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-controller="iTunesSearch">
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <form ng-submit="search()">
+            <input ng-model="searchTerm" class="form-control" id="searchBox" placeholder="Search by artist, song or album.." type="search"> <input type="submit" class="btn btn-default" ng-click="search()" value="Submit" /></form>
+          </div>
+        </form>
+      </div>
+      <div class="navbar-collapse collapse">
+        <p class="navbar-text"><a href="http://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html" target="_blank">iTunes API</a> search implementation using <a href="http://angularjs.org/" target="_blank">Angular JS</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h5>*Click on thumbnail for preview link!</h5>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12" ng-show="json">
+            <pre class="animated fadeIn">{{data}}</pre>
+          </div>
+        </div>
+        <div class="row" ng-hide="json">
+          <div class="animated fadeInDown thumbnail" ng-repeat="result in data.results">
+            <div class="row search-result">
+              <div class="col-xs-4">
+                <a ng-href="{{result.previewUrl}}" href="#" class="pull-left" target="_blank">
+                  <img ng-src="{{result.artworkUrl100}}" class="img-round" alt="">
+                </a>
+              </div>
+              <div class="description">
+                <h4>{{result.collectionName}}<br />
+                  <a ng-href="{{result.artistViewUrl}}" target="_blank">{{result.artistName}}</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="js/ui-utils.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.0/angular-ui-router.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
