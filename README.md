@@ -1,2 +1,1 @@
-An iTunes API search implementation using Angular JS.
-
+Searching the iTunes API for music by artist, song title or album asynchroniously with Angular JS!!
