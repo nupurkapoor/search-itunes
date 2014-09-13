@@ -10,8 +10,6 @@ body {
 
 #searchBox {
   border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   width: 500px;
 }
 
@@ -23,14 +21,9 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border: 1px solid #DEDEDE;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.05);
 }
 
 .search-result {
@@ -49,11 +42,6 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-          user-select: none;
 }
 
 .btn:focus {

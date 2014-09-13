@@ -36,15 +36,16 @@
                <div class="row" ng-hide="json">
                   <div class="thumbnail" ng-repeat="result in data.results">
                      <div class="row search-result">
-                        <div class="col-xs-4">
-                           <a ng-href="{{result.previewUrl}}" href="#" class="pull-left" target="_blank">
+                        <div class="col-xs-5">
                            <img ng-src="{{result.artworkUrl100}}" class="img-round" alt="">
-                           </a>
                         </div>
                         <div class="description">
                            <h4>{{result.collectionName}}<br />
                               <a ng-href="{{result.artistViewUrl}}" target="_blank">{{result.artistName}}</a>
                            </h4>
+                           <audio controls>
+                             <source src="{{result.previewUrl}}" type="audio/mpeg">
+                           </audio>
                         </div>
                      </div>
                   </div>
