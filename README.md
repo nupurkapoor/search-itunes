@@ -1,1 +1,1 @@
-Searching the iTunes API for music by artist, song title or album asynchroniously with Angular JS!!
+Searching iTunes and Last.fm by artist implemented in Angular JS.

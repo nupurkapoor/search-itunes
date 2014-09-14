@@ -8,7 +8,7 @@
    <body>
 
       <!-- Search Form -->
-      <div ng-controller="iTunesSearch">
+      <div ng-controller="iTunesSearchController">
          <div search-directive></div>
 
       <!-- iTunes Listing -->
@@ -19,7 +19,7 @@
             </div>
 
             <!-- Similar Artist view -->
-            <div ng-controller="fmSearch" class="related col-md-4">
+            <div ng-controller="fmSearchController" class="related col-md-4">
                <div upcoming-events class="upcoming"></div>
                <div similar-artist class="similar"></div>
             </div>
@@ -36,13 +36,11 @@
          </div>
       </div>
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-      <script src="js/ui-utils.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.0/angular-ui-router.js"></script>
       <script src="js/main.js"></script>
-      <script src="js/services/iTunesListing.js"></script>
-      <script src="js/services/fmListing.js"></script>
-      <script src="js/controllers/iTunesSearch.js"></script>
-      <script src="js/controllers/fmSearch.js"></script>
+      <script src="js/services/iTunesListingService.js"></script>
+      <script src="js/services/fmListingService.js"></script>
+      <script src="js/controllers/iTunesSearchController.js"></script>
+      <script src="js/controllers/fmSearchController.js"></script>
       <script src="js/directives/similarArtist.js"></script>
       <script src="js/directives/upcomingEvents.js"></script>
       <script src="js/directives/iTunesListingDirective.js"></script>
