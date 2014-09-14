@@ -8,6 +8,16 @@ body {
   width: 1050px;
 }*/
 
+ul li{
+
+  list-style-type: none;
+
+}
+
+.upcoming h3, .similar h3 {
+  color: #834E70;
+}
+
 #searchBox {
   border-radius: 8px;
   width: 800px;

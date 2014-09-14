@@ -16,4 +16,10 @@ app.controller('fmSearch' , ['$scope', 'fmListing' , 'iTunesListing'
   }
 
   iTunesListing.registerObserverCallback(updateList);
+
+  
+  $scope.searchArtist = function(name) {
+    console.log(name);
+  }
+
 }]);

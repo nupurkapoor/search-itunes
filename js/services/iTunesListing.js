@@ -1,5 +1,6 @@
 app.factory('iTunesListing', function($http) {
     var firstArtist;
+    var switchArtist;
 
     /* Observer pattern implementation inspired by stackoverflow - #12576798*/
     var observerCallback = [];

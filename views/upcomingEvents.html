@@ -1,9 +1,9 @@
-<div upcomingEvents>
+<div>
+  <h3 ng-show="events != null" >Upcoming Events</h3>
   <ul class="event" ng-repeat="event in events">
     <li >
       <h4>{{ event.title }}</h4>
-      <p>{{ event.venue.name }}</p>
-      <p>{{ event.venue.location.city }}</p>
+      <p>{{ event.venue.name }}, {{ event.venue.location.city }}</p>
       <p>{{ event.startDate }}</p>
     </li>
   </ul>

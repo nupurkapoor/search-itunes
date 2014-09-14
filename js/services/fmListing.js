@@ -32,8 +32,6 @@ app.factory('fmListing', function($http) {
                     "artist": queryString
                   }
               });
-
-
       }
   }
 });
