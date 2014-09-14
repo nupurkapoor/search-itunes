@@ -4,14 +4,18 @@ body {
   background: #DADEDE;
 }
 
-/*.container {
-  width: 1050px;
-}*/
-
-ul li{
-
+ul li {
   list-style-type: none;
+}
 
+ul.artist li {
+  width: 150px;
+}
+
+ul.artist li h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .upcoming h3, .similar h3 {

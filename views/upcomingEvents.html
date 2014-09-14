@@ -1,8 +1,8 @@
 <div>
   <h3 ng-show="events != null" >Upcoming Events</h3>
-  <ul class="event" ng-repeat="event in events">
-    <li >
-      <h4>{{ event.title }}</h4>
+  <ul class="events">
+    <li ng-repeat="event in events">
+      <h4><a href="{{event.url}}" target="_blnak">{{ event.title }}</a></h4>
       <p>{{ event.venue.name }}, {{ event.venue.location.city }}</p>
       <p>{{ event.startDate }}</p>
     </li>
