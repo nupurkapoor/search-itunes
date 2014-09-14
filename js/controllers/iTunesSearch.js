@@ -1,6 +1,6 @@
 app.controller('iTunesSearch', function($scope, $location, $routeParams, iTunesListing) {
-    $scope.search = function() {
-      iTunesListing.doSearch($scope.searchTerm)
+    $scope.search = function(searchTerm) {
+      iTunesListing.doSearch(searchTerm)
         .then(function(result) {
               $scope.data = result.data;
               $location.path($scope.searchTerm);
@@ -9,11 +9,12 @@ app.controller('iTunesSearch', function($scope, $location, $routeParams, iTunesL
 
     }
     $scope.searchTerm = $location.$$path.split("/")[1];
-    if($scope.searchTerm!="") {
-      $scope.search();
+    if($scope.searchTerm != "") {
+      $scope.search($scope.searchTerm);
     }
-    $scope.clear = function () {
-        $scope.searchTerm = "";
-    };
+
+    // $scope.clear = function () {
+    //     $scope.searchTerm = "";
+    // };
 
 });
