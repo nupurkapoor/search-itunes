@@ -4,6 +4,15 @@ body {
   background: #DADEDE;
 }
 
+.searchbox { 
+  border:1px solid #8A3349; 
+  margin-right: 10px;
+}
+
+.submitbtn {
+  width: 145px;
+}
+
 ul {
   padding-left: 0px;
 }

@@ -33,7 +33,7 @@ app.factory('fmListingService', function($http) {
                     "callback": "JSON_CALLBACK",
                     "method": upcomingEvents,
                     "autocorrect": 1,
-                    "limit": 3,
+                    "limit": 4,
                     "artist": queryString
                   }
               });
