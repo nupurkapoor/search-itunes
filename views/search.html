@@ -1,14 +1,11 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar-default navbar-fixed-top">
    <div class="container">
       <div class="navbar-header">
-         <div class="navbar-form navbar-left" >
-            <div class="form-group">
-               <form role="search">
-                  <input ng-model="searchTerm" class="form-control" id="searchBox" placeholder="Search by artist name.." type="search"> 
-                  <input type="submit" class="btn btn-default" ng-click="search(searchTerm)" value="Submit" />
-                  <!-- <input type="submit" class="btn btn-default" ng-click="clear()" value="Clear" /> -->
-               </form>
-            </div>
+         <div class="navbar-form" >
+            <input ng-model="searchTerm" class="form-control" id="searchBox" 
+               placeholder="Search by artist name.." type="search"> 
+            <input type="submit" class="btn btn-default" ng-click="search(searchTerm)" 
+               value="Submit" />
          </div>
       </div>
    </div>
